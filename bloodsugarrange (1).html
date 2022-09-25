@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <title>BloodSugarRange</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway:wght@100&family=Road+Rage&family=Roboto+Mono:wght@100;200&family=Sofia&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Work+Sans:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Ubuntu:ital,wght@1,500&family=Work+Sans:wght@900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=PT+Serif:wght@400;700&family=Tapestry&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        body
+        {
+            background-color: aliceblue;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            font-family: 'Baloo Bhai 2', cursive !important;
+            background-color: #ffffff;
+            padding: 15px;
+            letter-spacing: 2px;
+            color: #a7002d;
+        }
+
+        .header button {
+            width: 140px;
+            height: 40px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: larger;
+            color: black;
+            background-color: #ffc0c7;
+            border: none;
+            margin-left: 100px;
+        }
+
+        .black button {
+            width: 140px;
+            height: 40px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: larger;
+            color: black;
+            background-color: #ffc0c7;
+            border: none;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .black button {
+            width: 300px;
+            margin-top: 6px;
+            background-color: #098bd1;
+            font-size: medium;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .header button:hover {
+            background-color: #a7002d;
+            color: white;
+            transition: .3s;
+            border-left: 2px white;
+
+        }
+
+        .black button:hover {
+            color: white;
+            transition: .3s;
+            border-left: 2px white;
+        }
+
+        .first-div {
+            display: flex;
+            flex-direction: row;
+            color: black;
+        }
+
+        .first-div .contents p {
+            font-size: x-large;
+            padding: 20px;
+            padding-top: 30px;
+            ;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 70px;
+            background-color: rgb(236, 236, 247);
+            border-radius: 10px;
+            height: 400px;
+        }
+
+        .first-div img {
+            width: 600px;
+            height: 300px;
+            margin-top: 50px;
+            margin-right: 40px;
+
+        }
+
+        img {
+            display: block;
+            width: 70%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: black;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+        }
+
+        .black {
+            background-color: black;
+            height: 50px;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        .second-div {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .second-div img {
+            margin-left: 30px;
+            width: 50%;
+            height: 50%;
+            border-radius: 5px;
+        }
+
+        .second-div p {
+            margin: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            word-spacing: 2px;
+            font-size: large;
+            background-color: rgb(236, 236, 247);
+            border-radius: 10px;
+
+        }
+
+        .contentss,
+        .facts,
+        .hba1c,
+        .glucose_text .contents {
+            background-color: rgb(236, 236, 247);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-transform: none;
+            font-size: larger;
+        }
+
+        .page-col-1 .contents {
+            background-color: rgb(56, 56, 234);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0px
+            
+        }
+
+        .contents {
+            border-left: #098bd1;
+            padding: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+
+        body h2,
+        h3 {
+            padding: 10px;
+            font-family: 'Libre Bodoni', serif;
+            margin-left: 30%;
+            word-wrap: normal;
+            font-size: 30px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .facts ol li {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .contentss #come a {
+            margin-left: 20px;
+            text-decoration: none;
+            letter-spacing: normal;
+        }
+
+    #blood {
+             font-family: 'PT Serif', serif;
+             margin-left: 3%;
+             font-size: 20px;
+             letter-spacing: 1px;
+             padding: 5px;
+    }
+    #ppp{
+             font-family: 'PT Serif', serif;
+             margin-left: 3%;
+             font-size: 25px;
+             letter-spacing: 1px;
+             padding: 5px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>DAIBETES - DAIBETES MELLITUS</h1>
+        <a href="index.html">
+            <button href="index.html">
+                HOME
+            </button>
+        </a>
+    </div>
+    <div class="black">
+        <a href="https://t.me/Dibetobot">
+            <button onclick="index.html">
+                JOIN OUR TELEGRAM BOT
+            </button>
+        </a>
+    </div>
+    <div class="first-div">
+        <br>
+        <br>
+        <div class="contents">
+            <p>Diabetes is a condition where success of treatment depends on how well you keep your blood sugar
+                controlled.
+                Good self-management can help improve both short and long term health outcomes.<br>
+                <br>
+                Diabetes is a serious health condition its treatment to work, you must learn to manage blood sugar
+                levels.
+                You can use a blood sugar level calculator to understand your current
+                condition and practice self-management better.
+            </p>
+        </div>
+        <img src="../diabetio/images/first-img.webp" alt="">
+    </div>
+    <br>
+    <h2>Blood Sugar Chart</h2>
+    <br><br>
+
+    <div class="second-div">
+        <img src="../diabetio/images/blood sugar chart.jpeg" alt="">
+        <p>The Blood sugar chart provides descriptions of blood sugar values in terms of mg/dl depending on the test
+            type –
+            Fasting sugar, post-meal or post prandial and Glucose tolerance test (GTT)
+            for a normal person, in early diabetes and in established diabetes.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptates voluptatum, officia
+            repudiandae aperiam culpa temporibus qui illum corrupti quia eligendi. Veniam sint harum esse explicabo
+            assumenda vitae ratione sed.</p>
+    </div>
+    <br>
+
+    <h2 id="ppp">How is Blood Sugar Level Tested?</h2>
+
+    <div class="contentss">
+        <br>
+        <br>
+        <p">There are multiple tests to determine if you have high blood sugar. Some common tests
+            include a fasting sugar
+            test, post-meal test, and HbA1c). Below is the list of different blood sugar levels.</p>
+    </div>
+
+    <div class="contentss">
+        <ul>
+            <li>For the fasting sugar test, 70-100 mg/dl value is a normal range. For the post-meal test, below 140
+                mg/dl value after two hours of consuming glucose is a normal range.</li>
+
+            <li>For the fasting sugar test, 101-126 mg/dl value is a sign of early diabetes. For the post-meal test,
+                140-200 mg/dl value after two hours of consuming glucose is
+                an indication of this condition.</li>
+
+            <li>For the fasting sugar test, over 126 mg/dl value is an evidence of established diabetes. For the
+                post-meal test, over 200 mg/dl value after two hours of consuming glucose
+                is a confirmation of having this health condition.</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>Alarming facts about Diabetes</h2>
+    <div class="facts">
+        <ol>
+            <li>The International Diabetic Federation estimates that 1 in 11 adults in the world have diabetes, and some
+                46.5% of adults with diabetes are undiagnosed</li>
+            <br>
+            <li>The global burden of type-2 diabetes is set to increase to 438 million by 2030 from 285 million people
+                (recorded in 2010)</li>
+            <br>
+            <li>India is the diabetes capital of the world. The country has around 50 million people suffering from the
+                type-2 diabetes</li>
+            <br>
+        </ol>
+    </div>
+    <h2>HbA1c test for diabetes diagnosis</h2>
+    <div class="hba1c">
+
+        <p>An HbA1c test does not directly measure the level of blood glucose, however, the result of the test is
+            influenced by how high or low your blood glucose
+            levels have tended to be over a period of 2 to 3 months.</p>
+        <br>
+        <h4>Indications of diabetes or prediabetes are given under the following conditions:</h4>
+        <br>
+        <ul>
+            <li>Normal: Below 42 mmol/mol (6.0%)</li>
+            <br>
+            <li>Prediabetes: 42 to 47 mmol/mol (6.0 to 6.4%)</li>
+            <br>
+            <li>Diabetes: 48 mmol/mol (6.5% or over)</li>
+            <br>
+        </ul>
+    </div>
+    <div class="page-col-1">
+        <h2>Oral Glucose Tolerance Test (OGTT)</h2>
+        <div class="contentss">
+            <p>An oral glucose tolerance test involves first taking a fasting sample of blood and then taking a very
+                sweet
+                drink containing 75g of glucose. <br>
+
+                After having this drink you need to stay at rest until a further blood sample is taken after 2 hours.
+            </p>
+        </div>
+        <h2>Random plasma glucose test</h2>
+        <div class="contentss">
+            <p>A blood sample for a random plasma glucose test can be taken at any time. This doesn’t require as much
+                planning and is therefore used in
+                the diagnosis of type 1 diabetes when time is of the essence.</p>
+        </div>
+        <h2>Fasting plasma glucose test</h2>
+        <div class="contentss">
+            <p>A fasting plasma glucose test is taken after at least eight hours of fasting and is therefore usually
+                taken
+                in the morning.</p>
+            <p>The NICE guidelines regard a fasting plasma glucose result of 5.5 to 6.9 mmol/l as putting someone at
+                higher
+                risk of developing type 2 diabetes,
+                particularly when accompanied by other risk factors for type 2 diabetes.</p>
+        </div>
+    </div>
+    <h3 id="blood">Why are good blood sugar levels important?</h3>
+    <div class="page-col-1">
+        <div class="contentss">
+            <p>It is important that you control your blood glucose levels as well as you can as too high sugar levels
+                for
+                long periods of time increases the
+                risk of diabetes complications developing.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="contents">
+            <p>Copyrights &copy All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

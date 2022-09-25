@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetio - Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://use.fontawesome.com/95a8830a83.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        
+        body {
+            background: white;
+            font-size: large;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        
+        .contact-box {
+            background: white;
+            display: flex;
+        }
+        
+        .contact-left {
+            flex-basis: 50%;
+            padding: 50px 50px;
+        }
+        
+        .contact-right {
+            flex-basis: 60%;
+            padding: 40px;
+            background: #E93A68;
+            color: white;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .input-row .input-group {
+            flex-basis: 45%;
+        }
+        
+        #inp,
+        #inpmail {
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            height: 35px;
+            border-radius: 3px;
+            /* font-family: 'Baloo Bhai 2', cursive; */
+            box-decoration-break: slice;
+            border: 1px solid black;
+        }
+        
+        textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 600px;
+            height: 100px;
+            border-radius: 3px;
+            /* font-family: 'Baloo Bhai 2', cursive; */
+            box-decoration-break: slice;
+            border: 1px solid black;
+        }
+        
+        label {
+            margin-bottom: 6px;
+            display: block;
+        }
+        
+        button {
+            width: 200px;
+            border: none;
+            margin-left: 200px;
+            color: #E93A68;
+            height: 50px;
+            font-size: large;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin-top: 20px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        button:hover {
+            background-color: #E93A68;
+            color: white;
+            transition: .2s;
+            border: 1px solid black;
+        }
+        
+        .contact-left h2 {
+            color: #E93A68;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .contact-right h2 {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .linker {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .linker a {
+            font-size: larger;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            letter-spacing: 1px;
+        }
+        
+        .linker a:hover {
+            text-decoration: underline;
+        }
+        
+        #icoico {
+            padding: 10px;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-size: larger;
+        }
+        
+        .contact-right {
+            font-size: large;
+            word-spacing: 1px;
+            word-wrap: normal;
+            text-transform: capitalize;
+        }
+        
+        b {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Connect with us</h1>
+        <div class="linker">
+            <a href="index.html">Home</a>
+            <br>
+            <br>
+            <a href="#"> > </a>
+            <br>
+            <br>
+            <a href="contactus.html">Contact</a>
+        </div>
+
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h2>General Enquiry</h2>
+                <form method="post" action="contact.php">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input id="inp" type="text" name="first_name" placeholder="Enter First name">
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input id="inp" type="text" name="last_name" placeholder="Enter Last name">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input id="inpmail" type="email" name="email" placeholder="Enter Email">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input id="inp" type="text" name="phone" placeholder="Enter Phone number">
+                        </div>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your message" name="message"></textarea>
+
+                    <button type="submit" name="save">SUBMIT</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>We're here to help</h3>
+                <br>
+                <br>
+                <p>Our support team will be in touch very soon we try to respond to all your request within 24 hours (during weekdays)</p>
+                <br>
+                <br><b>for everything else</b>
+                <i id="icoico" class="fa fa-envelope" aria-hidden="true"></i>
+                <i id="icoico" class="fa fa-instagram" aria-hidden="true"></i>
+                <i id="icoico" class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
